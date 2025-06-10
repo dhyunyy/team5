@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>출석 보상 – 학생</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>출석 보상 DEMO (학생)</h2>
+
+  <button id="connectBtn">🟢 지갑 연결</button>
+  <p>내 주소: <span id="addr">-</span></p>
+
+  <input type="text" id="date" placeholder="YYYYMMDD">
+  <button id="attendBtn">출석하기</button>
+
+  <p>내 출석 횟수: <span id="cnt">0</span></p>
+  <p>내 ATTN 잔액: <span id="bal">0</span></p>
+
+  <script type="module" src="app.js"></script>
+</body></html>

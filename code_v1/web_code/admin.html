@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>출석 보상 – 관리자</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>출석 보상 DEMO (관리자)</h2>
+
+  <button id="connectBtn">🟢 지갑 연결</button>
+  <p>관리자 주소: <span id="adminAddr">-</span></p>
+
+  <hr />
+
+  <h3>① 사용자 조회</h3>
+  <input id="userAddr" type="text" placeholder="0x1234…">
+  <button id="queryBtn">조회</button>
+  <p>출석 횟수: <span id="userCnt">-</span></p>
+  <p>ATTN 잔액: <span id="userBal">-</span></p>
+
+  <hr />
+
+  <h3>② 파라미터 변경 (선택)</h3>
+  <label>rewardEvery:
+    <input id="rewardEvery" type="number" min="1">
+  </label>
+  <label>rewardAmount (ATTN):
+    <input id="rewardAmt" type="number" step="0.001">
+  </label>
+  <button id="setParamBtn">변경 트랜잭션</button>
+
+  <script type="module" src="admin.js"></script>
+</body></html>
